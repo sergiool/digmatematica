@@ -1,14 +1,31 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Avaliação de Matemática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Chatbot de Matemática</h1>
+        </header>
+        <main class="chat-window" id="chat-window">
+            <!-- As mensagens do chat aparecerão aqui -->
+        </main>
+        <footer class="chat-input-area">
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="message-input" placeholder="Digite sua resposta..." autocomplete="off">
+                <button type="submit" id="send-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></path></svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
