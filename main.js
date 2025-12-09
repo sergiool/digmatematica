@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageInput = document.getElementById('message-input');
     const sendButton = document.getElementById('send-button');
 
-    const N8N_WEBHOOK_URL = 'https://n8n-production-6608.up.railway.app/webhook/8b56e9be-84df-4500-bc07-a6449f23fd4e';
+    const N8N_WEBHOOK_URL = 'https://n8n-226928592575.us-central1.run.app/webhook/8b56e9be-84df-4500-bc07-a6449f23fd4e';
 
     // Gera um ID de sessão aleatório
     const sessionId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
