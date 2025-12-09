@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const N8N_WEBHOOK_URL = 'https://n8n-production-6608.up.railway.app/webhook/8b56e9be-84df-4500-bc07-a6449f23fd4e';
 
+    // Gera um ID de sessão aleatório
+    const sessionId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+
     function addMessage(message, sender) {
         const typingIndicator = document.getElementById('typing-indicator');
         if (typingIndicator) {
@@ -51,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ message: message })
+                body: JSON.stringify({ message: message, id: sessionId })
             });
 
             if (!response.ok) {
